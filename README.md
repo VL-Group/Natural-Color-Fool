@@ -1,7 +1,7 @@
 
 # Natural Color Fool: Towards Boosting Black-box Unrestricted Attacks (NeurIPS'22)
 
-This repository is the official implementation of our paper [Natural Color Fool: Towards Boosting Black-box Unrestricted Attacks](). In this paper, we propose a novel and effective **black-box unrestricted attack** Natural Color Fool (NCF) which is guided by realistic color distributions sampled from a publicly available dataset. The following is the simplified pipeline of NCF (optimizing one image variant without initialization reset):
+This repository is the official implementation of our paper [Natural Color Fool: Towards Boosting Black-box Unrestricted Attacks](https://arxiv.org/abs/2210.02041). In this paper, we propose a novel and effective **black-box unrestricted attack** Natural Color Fool (NCF) which is guided by realistic color distributions sampled from a publicly available dataset. The following is the simplified pipeline of NCF (optimizing one image variant without initialization reset):
 ![The simplified pipeline of NCF](./attack_pipe.png)
 
 ## Requirements
