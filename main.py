@@ -68,7 +68,7 @@ def attack(attacker, white_models:dict, black_models:dict, config, output_dir):
             end = idx + config.batch_size
         images, labels, filenames, color_20 = [], [], [], []
 
-        re_size = 224
+        re_size = config.images_size
 
         for i in range(idx, end):
             img_path = os.path.join(config.img_dir, '{}.png'.format(i))

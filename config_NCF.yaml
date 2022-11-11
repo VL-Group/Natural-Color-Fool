@@ -14,18 +14,18 @@ device: 'cuda:0'
 ########################################################################
 # 2 Set up the test model and data. 
 ########################################################################
-white_models_name: ['vgg19'] 
-black_models_name: ['inception_v3', 'resnet18', 'mobilenet_v2', 'densenet121', 'resnet50'] # Black box and white box cannot have the same model!
+white_models_name: ['inception_v3'] 
+black_models_name: ['vgg19', 'resnet18', 'mobilenet_v2', 'densenet121', 'resnet50'] # Black box and white box cannot have the same model!
 
 label_path: 'dataset/labels.txt'
 img_dir: 'dataset/images'
-masks_path: 'segm/masks.npy'  # /home/yuanshengming/data/Global_Attack/NaturalColorFool/segm/masks.npy  segm/masks.npy'
-# color_dir: 'dataset/lib'  #   dataset/lib
-color_dir: '/home/yuanshengming/Global_Attack/ColorAttack/debug_data'
+masks_path: 'segm/masks.npy'  
+color_dir: 'dataset/lib_299'  
 
 output_dir: 'adv'
 data_range: [1,1001]  # [start, end)
 batch_size: !!int 20
+images_size: 224
 
 ########################################################################
 # 3 NCF 
