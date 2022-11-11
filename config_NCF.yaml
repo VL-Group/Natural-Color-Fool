@@ -1,0 +1,41 @@
+
+########################################################################
+# 1 Basic settings(In general, there is no need to change these settings.)#
+########################################################################
+
+# attack mode: 'untargeted' or 'targeted(least-likely)' or 'targeted(random)' eta
+attack_mode: !!str untargeted  
+# Types of returned adversarial samples. 'float' or 'int'
+return_type: float   
+model_mode: !!str 'torch'  # torch|tf|timm
+local: True  # Does it run locally? (Default: True)
+device: 'cuda:0'
+
+########################################################################
+# 2 Set up the test model and data. 
+########################################################################
+white_models_name: ['vgg19'] 
+black_models_name: ['inception_v3', 'resnet18', 'mobilenet_v2', 'densenet121', 'resnet50'] # Black box and white box cannot have the same model!
+
+label_path: 'dataset/labels.txt'
+img_dir: 'dataset/images'
+masks_path: 'segm/masks.npy'  # /home/yuanshengming/data/Global_Attack/NaturalColorFool/segm/masks.npy  segm/masks.npy'
+# color_dir: 'dataset/lib'  #   dataset/lib
+color_dir: '/home/yuanshengming/Global_Attack/ColorAttack/debug_data'
+
+output_dir: 'adv'
+data_range: [1,1001]  # [start, end)
+batch_size: !!int 20
+
+########################################################################
+# 3 NCF 
+########################################################################
+color_mode: !!str Lab
+num_reset: !!int 10  # The number of initialization reset (Default: 10).
+eta: !!int 50  # The number of random searches (Default: 50).
+num_iter: !!int 15  # The iteration of neighborhood search (Default: 15).
+T_step: !!float 0.013  # The iterative step size of T (Default: 0.013).
+
+momentum: !!float 0.6  # (Default: 0.6)
+
+
