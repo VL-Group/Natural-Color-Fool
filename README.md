@@ -100,9 +100,9 @@ The sources of pre-training weights used in this paper are as follows:
 
 * **CNNs**: Official pre-training weights from torch.
 
-* **Transdormers**: Pre-training weights from the [timm](https://github.com/rwightman/pytorch-image-models) library.
+* **Transformers**: Pre-training weights from the [timm](https://github.com/rwightman/pytorch-image-models) library.
 
-* **$\rm Inc\mbox{-}v3_{ens3}$, $\rm IncRes\mbox{-}v2_{ens}$**: Pre-training weights from the [tf_to_pytorch_model](https://github.com/ylhz/tf_to_pytorch_model).
+* **$\rm Inc\mbox{-}v3_{ens3}$, $\rm IncRes\mbox{-}v2_{ens}$**: Pre-training weights from the repo [tf_to_pytorch_model](https://github.com/ylhz/tf_to_pytorch_model).
 
 * **Others**: Pre-training weights from the corresponding paper.
 
