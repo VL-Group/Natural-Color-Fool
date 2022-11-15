@@ -52,10 +52,10 @@ conda install h5py scipy tqdm wandb
 
 
 2. Datasets: 
-  Download ImageNet-compatible Dataset from [Releases](https://github.com/VL-Group/Natural-Color-Fool/releases/download/data/images.zip) and put it in `./dataset/`.
+  Download ImageNet-compatible Dataset from [Releases](https://github.com/VL-Group/Natural-Color-Fool/releases/download/data/images.zip) and unzip it in `./dataset/`.
 
 3. Color Distribution Library:
-  Download from [Releases](https://github.com/VL-Group/Natural-Color-Fool/releases/download/data/150_20_hist.npy) and put it in `./segm/pretrained/`.
+  Download from [Releases](https://github.com/VL-Group/Natural-Color-Fool/releases/download/data/150_20_hist.zip) and unzip it in `./dataset/`.
 
 
 ### Segmentation
