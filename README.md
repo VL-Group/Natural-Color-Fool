@@ -23,7 +23,8 @@ unzip -d ./dataset/ ./dataset/images.zip
 wget -P ./dataset/ https://github.com/VL-Group/Natural-Color-Fool/releases/download/data/lib_299.zip
 unzip -d ./dataset/lib_299/ ./dataset/lib_299.zip
 
-wget -P ./segm/ https://github.com/VL-Group/Natural-Color-Fool/releases/download/data/masks.npy
+wget -P ./segm/ https://github.com/VL-Group/Natural-Color-Fool/releases/download/data/masks.zip
+unzip -d ./segm/ ./segm/masks.zip
 
 python main.py --gpu 0
 ```
