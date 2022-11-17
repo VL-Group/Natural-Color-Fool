@@ -14,14 +14,15 @@ conda create -n ncf python==3.8
 conda activate ncf
 
 conda install pytorch==1.10.1 torchvision==0.11.2 torchaudio==0.10.1 cudatoolkit=11.1 -c pytorch -c conda-forge 
-conda install matplotlib h5py scipy tqdm wandb
+conda install -f matplotlib h5py scipy tqdm
+pip install wandb timm
 
 cd Natural-Color-Fool
 wget -P ./dataset/ https://github.com/VL-Group/Natural-Color-Fool/releases/download/data/images.zip
-unzip -d ./dataset/ ./dataset/images.zip
+unzip -q -d ./dataset/ ./dataset/images.zip
 
 wget -P ./dataset/ https://github.com/VL-Group/Natural-Color-Fool/releases/download/data/lib_299.zip
-unzip -d ./dataset/lib_299/ ./dataset/lib_299.zip
+unzip -q -d ./dataset/ ./dataset/lib_299.zip
 
 wget -P ./segm/ https://github.com/VL-Group/Natural-Color-Fool/releases/download/data/masks.zip
 unzip -d ./segm/ ./segm/masks.zip
