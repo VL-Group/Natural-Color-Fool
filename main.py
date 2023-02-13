@@ -160,7 +160,7 @@ if __name__ == "__main__":
     # hyperparameters
     config = attack_config.copy()
     config['batch_size'] = config['batch_size'] if opt.batch_size is None else opt.batch_size
-    config['num_reset'] = config['num_reset'] if opt.batch_size is None else opt.num_reset
+    config['num_reset'] = config['num_reset'] if opt.num_reset is None else opt.num_reset
     config['eta'] = config['eta'] if opt.eta is None else opt.eta
     config['num_iter'] = config['num_iter'] if opt.num_iter is None else opt.num_iter
     config['T_step'] = config['T_step'] if opt.T_step is None else opt.T_step
